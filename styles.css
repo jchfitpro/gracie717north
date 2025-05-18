@@ -1,0 +1,53 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+}
+.cta-button {
+  background-color: #e63946;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.welcome, .programs, .quote-strip, footer {
+  padding: 2rem;
+  background: white;
+  margin-top: 1rem;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.program {
+  flex: 1 1 200px;
+}
+.program img {
+  max-width: 100%;
+  height: auto;
+}
+.quote-strip {
+  background: #222;
+  color: white;
+  text-align: center;
+}
