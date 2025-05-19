@@ -108,3 +108,30 @@ body {
   font-size: 0.9rem;
   color: #aaa;
 }
+
+.about-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.about-background img {
+  position: absolute;
+  width: 200px;
+  opacity: 0.15;
+  transform: rotate(var(--angle));
+  transition: all 0.3s ease;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.about-background img.clicked {
+  opacity: 1;
+  transform: rotate(0deg) scale(1.15);
+  z-index: 10;
+}
