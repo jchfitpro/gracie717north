@@ -48,5 +48,12 @@
     <img src="images/worlds-2021-nogi.jpg" class="img4" alt="2021 No-Gi Worlds Podium">
     <img src="images/worlds-2021-gi.jpg" class="img5" alt="2021 Gi Worlds Podium">
   </div>
+  <script>
+  document.querySelectorAll('.about-background img').forEach(img => {
+    img.addEventListener('click', () => {
+      img.classList.toggle('clicked');
+    });
+  });
+  </script>
 </body>
 </html>
