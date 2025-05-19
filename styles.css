@@ -187,3 +187,40 @@ body {
   text-align: left;
   line-height: 1.6;
 }
+
+.carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  padding: 2rem 1rem;
+  gap: 1rem;
+  background: #111;
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  scroll-snap-align: center;
+}
+
+.carousel-track img {
+  height: 250px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-track img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #eee;
+  margin-top: 2rem;
+}
