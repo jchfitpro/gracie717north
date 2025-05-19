@@ -149,3 +149,28 @@ body {
 .photo-scatter img:nth-child(4) { --rotate: 6deg; }
 .photo-scatter img:nth-child(5) { --rotate: -2deg; }
 .photo-scatter img:nth-child(6) { --rotate: 4deg; }
+.background-scatter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.background-scatter img {
+  position: absolute;
+  width: 180px;
+  opacity: 0.1;
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: opacity 0.3s ease;
+}
+
+.background-scatter img:hover {
+  opacity: 0.9;
+  z-index: 5;
+  transform: scale(1.05);
+  pointer-events: auto;
+}
