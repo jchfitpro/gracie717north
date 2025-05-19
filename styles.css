@@ -1,48 +1,67 @@
-/* Base Styles / body { margin: 0; padding-top: 80px; / space for fixed nav */ font-family: Arial, sans-serif; background-color: #111; color: #fff; }
-
-/* Navigation */ nav { position: fixed; top: 0; width: 100%; background-color: #000; padding: 16px 0; z-index: 999; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8); }
-
-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-
-nav li { margin: 0 15px; }
-
-nav a { text-decoration: none; color: #fff; font-weight: bold; font-size: 18px; }
-
-nav a:hover { color: #c00; }
-
-/* Banner */ .banner {
-  position: relative;
-  background: url("Images/hero-banner.jpg") no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Base Layout */
+body {
+  margin: 0;
+  padding-top: 70px;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
 }
 
-.banner::before {
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 0;
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 40%;
-  background-color: rgba(0, 0, 0, 0.5); /* Softer darkness */
-  z-index: 1;
-  border-radius: 20px;
+  background-color: #000;
+  padding: 16px 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #c00;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  background: url("images/hero-banner.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-content {
-  position: relative;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 30px;
+  border-radius: 10px;
   text-align: center;
-  color: #fff;
+  max-width: 85%;
   z-index: 2;
-  padding: 20px;
-  max-width: 90%;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
 }
 
 .banner-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin: 0 0 10px;
 }
 
 .banner-content p {
@@ -51,25 +70,42 @@ nav a:hover { color: #c00; }
 }
 
 .cta-button {
-  background-color: #b30000;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: bold;
+  background-color: #c00;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   text-decoration: none;
 }
-.cta-button:hover { background-color: #900; }
 
-section { padding: 60px 20px; max-width: 900px; margin: auto; }
+.cta-button:hover {
+  background-color: #900;
+}
 
-h2 { font-size: 32px; margin-bottom: 20px; }
+/* Main Section */
+section.intro {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-footer { background-color: #000; color: #ccc; text-align: center; padding: 20px; margin-top: 40px; }
+section.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 
-/* About Page - Background Image Scatter */ .background-scatter { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+section.intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
-.background-scatter img { position: absolute; width: 180px; opacity: 0.1; border: 5px solid white; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); transition: opacity 0.3s ease; }
-
-.background-scatter img:hover { opacity: 0.9; z-index: 5; transform: scale(1.05); pointer-events: auto; }
-
+/* Footer */
+footer {
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
