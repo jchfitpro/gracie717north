@@ -175,9 +175,10 @@ body {
 }
 
 .about-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust this to control darkness */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 4rem 1rem;
   color: white;
+  text-align: center;
 }
 
 .bio-section {
