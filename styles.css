@@ -230,7 +230,7 @@ body {
 
 @media (max-width: 768px) {
   .gallery-title::after {
-    content: " \u2192 Swipe to view more";
+    content: " → Swipe to view more";
     font-size: 0.9rem;
     color: #aaa;
     display: block;
