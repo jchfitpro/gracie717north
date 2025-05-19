@@ -3,50 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Coach Justin High | Gracie 717 North</title>
+  <title>About Coach Justin High</title>
   <link rel="stylesheet" href="styles.css"/>
+  <style>
+    body {
+      background-color: #111;
+      color: #f4f4f4;
+      font-family: sans-serif;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .bio {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      z-index: 2;
+      position: relative;
+    }
+
+    .bio h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .bio h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .photo {
+      position: absolute;
+      width: 180px;
+      border: 6px solid white;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+      z-index: 1;
+      opacity: 0.95;
+    }
+
+    .photo-1 { top: 20px; left: 5%; transform: rotate(-5deg); }
+    .photo-2 { top: 60px; right: 5%; transform: rotate(6deg); }
+    .photo-3 { bottom: 80px; left: 10%; transform: rotate(-3deg); }
+    .photo-4 { bottom: 20px; right: 10%; transform: rotate(4deg); }
+    .photo-5 { top: 250px; left: 50%; transform: rotate(2deg); }
+    .photo-6 { top: 400px; right: 50%; transform: rotate(-6deg); }
+
+    @media screen and (max-width: 768px) {
+      .photo {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="programs.html">Programs</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="about-page">
-    <section class="about-bio">
-      <h1>About Coach Justin High</h1>
-      <h2>Owner & Head Instructor – Gracie 717 North<br/>
-      5x IBJJF World Champion | BJJ Brown Belt</h2>
-      <p>Justin High is a lifelong grappler, competitor, and coach. He grew up scrapping with friends and cousins on the farm, eventually joining the wrestling team in middle school. By his sophomore year, he had earned All Tri-Valley League Heavyweight honors and developed a lasting respect for toughness, consistency, and accountability.</p>
+  <div class="bio">
+    <h1>About Coach Justin High</h1>
+    <h2>Owner & Head Instructor – Gracie 717 North<br/>5x IBJJF World Champion | BJJ Brown Belt</h2>
 
-      <p>After high school, he pursued MMA and kickboxing, training under respected striking coaches while continuing to build strength through dedicated lifting. He later studied Exercise Physiology in college, laying a foundation in human performance, nutrition, and training methodology.</p>
+    <p>Justin High is a lifelong grappler, competitor, and coach. He grew up scrapping with friends and cousins on the farm, eventually joining the wrestling team in middle school. By his sophomore year, he had earned All Tri-Valley League Heavyweight honors and developed a lasting respect for toughness, consistency, and accountability.</p>
 
-      <p>During that same period, Justin worked as a bouncer at major nightclubs across the country, where real-world pressure taught him the value of composure, presence, and sharp physical control.</p>
+    <p>After high school, he pursued MMA and kickboxing, training under respected striking coaches while continuing to build strength through dedicated lifting. He later studied Exercise Physiology in college, laying a foundation in human performance, nutrition, and training methodology.</p>
 
-      <p>In 2012, he stepped into Brazilian Jiu Jitsu—and never left. That journey eventually led him to Coach Damione Puopolo at Gracie 717, who played a central role in sharpening Justin’s technique, mindset, and competitive edge.</p>
+    <p>During that same period, Justin worked as a bouncer at major nightclubs across the country, where real-world pressure taught him the value of composure, presence, and sharp physical control.</p>
 
-      <p>Justin has since competed in some of the most prestigious grappling events in the world, testing himself against high-level opponents from every corner of the globe. His style is built on pressure, precision, and deep fundamentals—refined through years of discipline, setbacks, and success on the mats.</p>
+    <p>In 2012, he stepped into Brazilian Jiu Jitsu—and never left. That journey eventually led him to Coach Damione Puopolo at Gracie 717, who played a central role in sharpening Justin’s technique, mindset, and competitive edge.</p>
 
-      <p>In 2022, Justin began competing in ultramarathon races, applying the same discipline and intensity from his BJJ career to endurance events—placing top 10 in all three ultras he’s completed to date.</p>
+    <p>Justin has since competed in some of the most prestigious grappling events in the world, testing himself against high-level opponents from every corner of the globe. His style is built on pressure, precision, and deep fundamentals—refined through years of discipline, setbacks, and success on the mats.</p>
 
-      <p>Now a Brazilian Jiu Jitsu brown belt, he founded Gracie 717 North in Halifax, PA in 2024, where he leads a new generation of athletes with the same relentless intensity that shaped his path.</p>
+    <p>In 2022, Justin began competing in ultramarathon races, applying the same discipline and intensity from his BJJ career to endurance events—placing top 10 in all three ultras he’s completed to date.</p>
 
-      <blockquote>
-        <em>Fundamentals first. Pressure always. Discipline above all.</em>
-      </blockquote>
-    </section>
-  </main>
+    <p>Now a Brazilian Jiu Jitsu brown belt, he founded Gracie 717 North in Halifax, PA in 2024, where he leads a new generation of athletes with the same relentless intensity that shaped his path.</p>
 
-  <footer>
-    <p>Gracie 717 North — Halifax, PA</p>
-  </footer>
+    <blockquote><em>Fundamentals first. Pressure always. Discipline above all.</em></blockquote>
+  </div>
+
+  <!-- Scattered images behind/around the bio -->
+  <img src="images/about-1.jpg" alt="Victory Pose" class="photo photo-1" />
+  <img src="images/about-2.jpg" alt="2023 Podium" class="photo photo-2" />
+  <img src="images/about-3.jpg" alt="2022 Podium" class="photo photo-3" />
+  <img src="images/about-4.jpg" alt="Backstep Pass" class="photo photo-4" />
+  <img src="images/about-5.jpg" alt="Action Shot" class="photo photo-5" />
+  <img src="images/about-6.jpg" alt="Coach & Kids" class="photo photo-6" />
+
 </body>
 </html>
