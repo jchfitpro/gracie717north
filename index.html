@@ -2,108 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gracie 717 North</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#programs">Programs</a></li>
-      <li><a href="#schedule">Schedule</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <header class="hero" style="background-image: url('images/hero-banner.jpg');">
-    <div class="overlay">
+  <header class="hero">
+    <img src="images/hero-banner.jpg" alt="Gracie 717 Team" />
+    <div class="hero-text">
       <h1>GRACIE 717 NORTH</h1>
       <p>Brazilian Jiu Jitsu | MMA | Discipline-Driven Training</p>
-      <a href="#contact" class="cta-button">Try a Free Class</a>
+      <a class="cta-button" href="contact.html">Try a Free Class</a>
     </div>
   </header>
 
-  <section class="welcome">
-    <h2>Welcome to Gracie 717 North</h2>
-    <p>We build athletes, fighters, and disciplined people through pressure-tested Brazilian Jiu Jitsu and mixed martial arts training. Whether you’re here to compete, grow, or change your life—we’ve got a place for you on the mat.</p>
-  </section>
+  <main>
+    <section class="intro">
+      <h2>Welcome to Gracie 717 North</h2>
+      <p>We build athletes, fighters, and disciplined people through pressure-tested Brazilian Jiu Jitsu and mixed martial arts training. Whether you're here to compete, grow, or change your life—we’ve got a place for you on the mat.</p>
+    </section>
 
-  <section id="programs" class="programs">
-    <h2>Our Programs</h2>
-    <div class="grid">
-      <div class="program">
-        <img src="images/adult-bjj.jpg" alt="Adult BJJ">
-        <h3>Adult BJJ (Gi & No-Gi)</h3>
+    <section class="programs-preview">
+      <h2>Our Programs</h2>
+      <div class="program-grid">
+        <div class="program-item">
+          <img src="images/adult-bjj.jpg" alt="Adult BJJ" />
+          <p><a href="programs.html#adult">Adult BJJ (Gi & No-Gi)</a></p>
+        </div>
+        <div class="program-item">
+          <img src="images/kids-bjj.jpg" alt="Kids BJJ" />
+          <p><a href="programs.html#kids">Kids BJJ (Ages 6–12)</a></p>
+        </div>
+        <div class="program-item">
+          <img src="images/tiny-grapplers.jpg" alt="Tiny Grapplers" />
+          <p><a href="programs.html#tiny">Tiny Grapplers (Under 6)</a></p>
+        </div>
+        <div class="program-item">
+          <img src="images/kickboxing.jpg" alt="Kickboxing" />
+          <p><a href="programs.html#kickboxing">Kickboxing</a></p>
+        </div>
+        <div class="program-item">
+          <img src="images/open-mat.jpg" alt="Open Mat" />
+          <p><a href="programs.html#openmat">Open Mat & Sparring</a></p>
+        </div>
       </div>
-      <div class="program">
-        <img src="images/kids-bjj.jpg" alt="Kids BJJ">
-        <h3>Kids BJJ (Ages 6–12)</h3>
-      </div>
-      <div class="program">
-        <img src="images/tiny-grapplers.jpg" alt="Tiny Grapplers">
-        <h3>Tiny Grapplers (Under 6)</h3>
-      </div>
-      <div class="program">
-        <img src="images/kickboxing.jpg" alt="Kickboxing">
-        <h3>Kickboxing</h3>
-      </div>
-      <div class="program">
-        <img src="images/open-mat.jpg" alt="Open Mat">
-        <h3>Open Mat & Sparring</h3>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Coach Justin High</h2>
-      <p><strong>Owner & Head Instructor – Gracie 717 North | 5x IBJJF World Champion | BJJ Brown Belt</strong></p>
-      <p>Justin High is a lifelong grappler, competitor, and coach. He grew up scrapping with friends and cousins on the farm, eventually joining the wrestling team in middle school. By his sophomore year, he had earned All Tri-Valley League Heavyweight honors and developed a lasting respect for toughness, consistency, and accountability.</p>
-      <p>After high school, he pursued MMA and kickboxing, training under respected striking coaches while continuing to build strength through dedicated lifting. He later studied Exercise Physiology in college, laying a foundation in human performance, nutrition, and training methodology.</p>
-      <p>During that same period, Justin worked as a bouncer at major nightclubs across the country, where real-world pressure taught him the value of composure, presence, and sharp physical control.</p>
-      <p>In 2012, he stepped into Brazilian Jiu Jitsu—and never left. That journey eventually led him to Coach Damione Puopolo at Gracie 717, who played a central role in sharpening Justin’s technique, mindset, and competitive edge.</p>
-      <p>Justin has since competed in some of the most prestigious grappling events in the world, testing himself against high-level opponents from every corner of the globe. His style is built on pressure, precision, and deep fundamentals—refined through years of discipline, setbacks, and success on the mats.</p>
-      <p>In 2022, Justin began competing in ultramarathon races, applying the same discipline and intensity from his BJJ career to endurance events—placing top 10 in all three ultras he’s completed to date.</p>
-      <p>Now a Brazilian Jiu Jitsu brown belt, he founded Gracie 717 North in Halifax, PA in 2024, where he leads a new generation of athletes with the same relentless intensity that shaped his path.</p>
-      <p><em>Fundamentals first. Pressure always. Discipline above all.</em></p>
-    </div>
-  </section>
-
-  <section id="schedule" class="section">
-    <div class="container">
-      <h2>Schedule</h2>
-      <p>Class schedule coming soon. Weekly classes include early morning BJJ, evening No-Gi, Kids classes, Kickboxing, and Open Mat.</p>
-    </div>
-  </section>
-
-  <section id="pricing" class="section">
-    <div class="container">
-      <h2>Pricing</h2>
-      <ul>
-        <li>Adult BJJ: $85/month</li>
-        <li>Child BJJ (6–12): $65/month</li>
-        <li>Tiny Grapplers (Under 6): $40/month</li>
-        <li>Adult + Child Family Plan: $120/month</li>
-        <li>Additional Children: +$30 each</li>
-        <li>All memberships include unlimited classes</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="quote-strip">
-    <blockquote>
-      <p>"Fundamentals first. Pressure always. Discipline above all."</p>
-    </blockquote>
-  </section>
-
-  <footer id="contact">
-    <h2>Try a Free Class</h2>
-    <p>Message us on Facebook or stop by the gym to get started.</p>
-    <p>Located in Halifax, PA | Est. 2024</p>
-  </footer>
+    </section>
+  </main>
 
 </body>
 </html>
