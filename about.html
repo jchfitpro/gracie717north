@@ -1,55 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Coach Justin High</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .bio-container {
+      position: relative;
+      max-width: 800px;
+      margin: 4rem auto;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 2rem;
+      border-radius: 10px;
+      z-index: 1;
+    }.bio-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bio-container h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.bio-section {
+  margin-bottom: 1.5rem;
+}
+
+.bio-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ff4040;
+  text-transform: uppercase;
+}
+
+.background-scatter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.background-scatter img {
+  position: absolute;
+  width: 180px;
+  opacity: 0.1;
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: opacity 0.3s ease;
+}
+
+.background-scatter img:hover {
+  opacity: 0.9;
+  z-index: 5;
+  transform: scale(1.05);
+  pointer-events: auto;
+}
+
+.img1 { top: 20px; left: 5%; transform: rotate(-5deg); }
+.img2 { top: 100px; right: 5%; transform: rotate(6deg); }
+.img3 { bottom: 80px; left: 10%; transform: rotate(-3deg); }
+.img4 { bottom: 40px; right: 10%; transform: rotate(4deg); }
+.img5 { top: 300px; left: 50%; transform: rotate(-2deg); }
+
+  </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main class="content">
+  <div class="bio-container">
     <h1>About Coach Justin High</h1>
-    <h3>Owner & Head Instructor – Gracie 717 North | 5x IBJJF World Champion | BJJ Brown Belt</h3>
-    
-    <p>Justin High is a lifelong grappler, competitor, and coach. He grew up scrapping with friends and cousins on the farm, eventually joining the wrestling team in middle school. By his sophomore year, he had earned All Tri-Valley League Heavyweight honors and developed a lasting respect for toughness, consistency, and accountability.</p>
+    <h3>Owner & Head Instructor – Gracie 717 North | 5x IBJJF World Champion | BJJ Brown Belt</h3><div class="bio-section">
+  <h4>Early Years</h4>
+  <p>Justin High is a lifelong grappler, competitor, and coach. He grew up scrapping with friends and cousins on the farm, eventually joining the wrestling team in middle school. By his sophomore year, he had earned All Tri-Valley League Heavyweight honors and developed a lasting respect for toughness, consistency, and accountability.</p>
+</div>
 
-    <p>After high school, he pursued MMA and kickboxing, training under respected striking coaches while continuing to build strength through dedicated lifting. He later studied Exercise Physiology in college, laying a foundation in human performance, nutrition, and training methodology.</p>
+<div class="bio-section">
+  <h4>MMA & Education</h4>
+  <p>After high school, he pursued MMA and kickboxing, training under respected striking coaches while continuing to build strength through dedicated lifting. He later studied Exercise Physiology in college, laying a foundation in human performance, nutrition, and training methodology.</p>
+</div>
 
-    <p>During that same period, Justin worked as a bouncer at major nightclubs across the country, where real-world pressure taught him the value of composure, presence, and sharp physical control.</p>
+<div class="bio-section">
+  <h4>Security & Street Experience</h4>
+  <p>During that same period, Justin worked as a bouncer at major nightclubs across the country, where real-world pressure taught him the value of composure, presence, and sharp physical control.</p>
+</div>
 
-    <p>In 2012, he stepped into Brazilian Jiu Jitsu—and never left. That journey eventually led him to Coach Damione Puopolo at Gracie 717, who played a central role in sharpening Justin’s technique, mindset, and competitive edge.</p>
+<div class="bio-section">
+  <h4>Brazilian Jiu Jitsu Journey</h4>
+  <p>In 2012, he stepped into Brazilian Jiu Jitsu—and never left. That journey eventually led him to Coach Damione Puopolo at Gracie 717, who played a central role in sharpening Justin’s technique, mindset, and competitive edge.</p>
+</div>
 
-    <p>Justin has since competed in some of the most prestigious grappling events in the world, testing himself against high-level opponents from every corner of the globe. His style is built on pressure, precision, and deep fundamentals—refined through years of discipline, setbacks, and success on the mats.</p>
+<div class="bio-section">
+  <h4>Competing on the World Stage</h4>
+  <p>Justin has since competed in some of the most prestigious grappling events in the world, testing himself against high-level opponents from every corner of the globe. His style is built on pressure, precision, and deep fundamentals—refined through years of discipline, setbacks, and success on the mats.</p>
+</div>
 
-    <p>In 2022, Justin began competing in ultramarathon races, applying the same discipline and intensity from his BJJ career to endurance events—placing top 10 in all three ultras he’s completed to date.</p>
+<div class="bio-section">
+  <h4>Endurance & Discipline</h4>
+  <p>In 2022, Justin began competing in ultramarathon races, applying the same discipline and intensity from his BJJ career to endurance events—placing top 10 in all three ultras he’s completed to date.</p>
+</div>
 
-    <p>Now a Brazilian Jiu Jitsu brown belt, he founded Gracie 717 North in Halifax, PA in 2024, where he leads a new generation of athletes with the same relentless intensity that shaped his path.</p>
+<div class="bio-section">
+  <h4>Founding Gracie 717 North</h4>
+  <p>Now a Brazilian Jiu Jitsu brown belt, he founded Gracie 717 North in Halifax, PA in 2024, where he leads a new generation of athletes with the same relentless intensity that shaped his path.</p>
+</div>
 
-    <blockquote><em>Fundamentals first. Pressure always. Discipline above all.</em></blockquote>
+<blockquote><em>"Fundamentals first. Pressure always. Discipline above all."</em></blockquote>
 
-    <section class="photo-scatter">
-  <img src="images/worlds-2023-nogi.jpg" alt="2023 No-Gi Worlds Podium">
-  <img src="images/worlds-2023-gi.jpg" alt="2023 Gi Worlds Podium">
-  <img src="images/worlds-2022-gi.jpg" alt="2022 Gi Worlds Podium">
-  <img src="images/worlds-2021-nogi.jpg" alt="2021 No-Gi Worlds Podium">
-  <img src="images/worlds-2020-gi.jpg" alt="2020 Gi Worlds Podium">
-  <img src="images/worlds-2021-gi.jpg" alt="2021 Gi Worlds Podium">
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Gracie 717 North | Halifax, PA</p>
-  </footer>
+  </div>  <div class="background-scatter">
+    <img src="images/worlds-2023-nogi.jpg" class="img1" alt="2023 No-Gi Worlds Podium">
+    <img src="images/worlds-2023-gi.jpg" class="img2" alt="2023 Gi Worlds Podium">
+    <img src="images/worlds-2022-gi.jpg" class="img3" alt="2022 Gi Worlds Podium">
+    <img src="images/worlds-2021-nogi.jpg" class="img4" alt="2021 No-Gi Worlds Podium">
+    <img src="images/worlds-2021-gi.jpg" class="img5" alt="2021 Gi Worlds Podium">
+  </div>
 </body>
 </html>
