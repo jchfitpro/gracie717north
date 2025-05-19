@@ -4,66 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Coach Justin High</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <style>
-    body {
-      background-color: #111;
-      color: #f4f4f4;
-      font-family: sans-serif;
-      padding: 2rem;
-      position: relative;
-    }
-
-    .bio {
-      max-width: 700px;
-      margin: 0 auto;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 2rem;
-      z-index: 2;
-      position: relative;
-    }
-
-    .bio h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .bio h2 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .photo {
-      position: absolute;
-      width: 180px;
-      border: 6px solid white;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-      z-index: 1;
-      opacity: 0.95;
-    }
-
-    .photo-1 { top: 20px; left: 5%; transform: rotate(-5deg); }
-    .photo-2 { top: 60px; right: 5%; transform: rotate(6deg); }
-    .photo-3 { bottom: 80px; left: 10%; transform: rotate(-3deg); }
-    .photo-4 { bottom: 20px; right: 10%; transform: rotate(4deg); }
-    .photo-5 { top: 250px; left: 50%; transform: rotate(2deg); }
-    .photo-6 { top: 400px; right: 50%; transform: rotate(-6deg); }
-
-    @media screen and (max-width: 768px) {
-      .photo {
-        display: none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <div class="bio">
+  <main class="content">
     <h1>About Coach Justin High</h1>
-    <h2>Owner & Head Instructor – Gracie 717 North<br/>5x IBJJF World Champion | BJJ Brown Belt</h2>
-
+    <h3>Owner & Head Instructor – Gracie 717 North | 5x IBJJF World Champion | BJJ Brown Belt</h3>
+    
     <p>Justin High is a lifelong grappler, competitor, and coach. He grew up scrapping with friends and cousins on the farm, eventually joining the wrestling team in middle school. By his sophomore year, he had earned All Tri-Valley League Heavyweight honors and developed a lasting respect for toughness, consistency, and accountability.</p>
 
     <p>After high school, he pursued MMA and kickboxing, training under respected striking coaches while continuing to build strength through dedicated lifting. He later studied Exercise Physiology in college, laying a foundation in human performance, nutrition, and training methodology.</p>
@@ -79,15 +37,19 @@
     <p>Now a Brazilian Jiu Jitsu brown belt, he founded Gracie 717 North in Halifax, PA in 2024, where he leads a new generation of athletes with the same relentless intensity that shaped his path.</p>
 
     <blockquote><em>Fundamentals first. Pressure always. Discipline above all.</em></blockquote>
-  </div>
 
-  <!-- Scattered images behind/around the bio -->
-  <img src="images/about-1.jpg" alt="Victory Pose" class="photo photo-1" />
-  <img src="images/about-2.jpg" alt="2023 Podium" class="photo photo-2" />
-  <img src="images/about-3.jpg" alt="2022 Podium" class="photo photo-3" />
-  <img src="images/about-4.jpg" alt="Backstep Pass" class="photo photo-4" />
-  <img src="images/about-5.jpg" alt="Action Shot" class="photo photo-5" />
-  <img src="images/about-6.jpg" alt="Coach & Kids" class="photo photo-6" />
+    <section class="gallery">
+      <img src="images/worlds-2023-nogi.jpg" alt="2023 No-Gi Worlds Podium">
+      <img src="images/worlds-2023-gi.jpg" alt="2023 Gi Worlds Podium">
+      <img src="images/worlds-2022-gi.jpg" alt="2022 Gi Worlds Podium">
+      <img src="images/worlds-2021-nogi.jpg" alt="2021 No-Gi Worlds Podium">
+      <img src="images/worlds-2020-gi.jpg" alt="2020 Gi Worlds Podium">
+      <img src="images/worlds-2021-gi.jpg" alt="2021 Gi Worlds Podium">
+    </section>
+  </main>
 
+  <footer>
+    <p>&copy; 2024 Gracie 717 North | Halifax, PA</p>
+  </footer>
 </body>
 </html>
