@@ -259,3 +259,38 @@ body {
 .contact-info a:hover {
   text-decoration: underline;
 }
+
+.programs-container {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.programs-container h1 {
+  margin-bottom: 2rem;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.program-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.program-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.program-card h2 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
