@@ -237,3 +237,25 @@ body {
     margin-top: 0.3rem;
   }
 }
+
+.contact-container {
+  padding: 4rem 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-info h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color: #e63946;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
