@@ -342,3 +342,17 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
+.schedule-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.schedule-wrapper img {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  border-radius: 8px;
+}
